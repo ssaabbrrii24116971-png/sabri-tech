@@ -12,9 +12,9 @@ function siteUrl(): string {
 }
 
 export const siteConfig = {
-  name: "NEXORA TECH",
+  name: "SABRI TECH",
   /** Affiché dans le logo : première partie en blanc/noir, seconde en bleu. */
-  logoText: ["NEXORA", "TECH"] as const,
+  logoText: ["SABRI", "TECH"] as const,
   /**
    * Adresse publique du site (aperçus de partage Facebook / WhatsApp).
    * Ordre : NEXT_PUBLIC_SITE_URL (votre domaine) → domaine de production Vercel (automatique) → localhost.

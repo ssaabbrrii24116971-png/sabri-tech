@@ -1,4 +1,4 @@
-# NEXORA TECH — Boutique d'accessoires électroniques (Tunisie)
+# SABRI TECH — Boutique d'accessoires électroniques (Tunisie)
 
 Boutique en ligne en français (arabe disponible), prix en dinars tunisiens (TND), commande **uniquement via WhatsApp** avec **paiement à la livraison**.
 
