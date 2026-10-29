@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="800" height="800">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#E8F1FF"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#g)"/>
+  <circle cx="200" cy="205" r="150" fill="#087CFF" opacity="0.07"/>
+  <ellipse cx="200" cy="362" rx="110" ry="10" fill="#080F20" opacity=".08"/>
+  
+    <rect x="160" y="60" width="80" height="90" rx="18" fill="#080F20" opacity=".9"/>
+    <rect x="160" y="250" width="80" height="90" rx="18" fill="#080F20" opacity=".9"/>
+    <circle cx="200" cy="200" r="78" fill="#1b2440"/><circle cx="200" cy="200" r="64" fill="#080F20"/>
+         <circle cx="200" cy="200" r="52" fill="none" stroke="#087CFF" stroke-width="6" stroke-dasharray="230 400" stroke-linecap="round" transform="rotate(-90 200 200)"/>
+    <text x="200" y="208" font-family="Arial" font-weight="700" font-size="24" fill="#fff" text-anchor="middle">10:09</text>
+    <rect x="276" y="186" width="10" height="28" rx="4" fill="#087CFF"/>
+  <g><rect x="326" y="360" rx="8" width="58" height="24" fill="#080F20" opacity=".08"/><text x="337" y="377" font-family="Arial" font-size="12" font-weight="700" letter-spacing="1.5" fill="#080F20" opacity=".55">DÉMO</text></g>
+</svg>

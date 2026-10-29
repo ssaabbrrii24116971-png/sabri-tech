@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="800" height="800">
+  <circle cx="200" cy="200" r="170" fill="#087CFF" opacity=".10"/>
+  <circle cx="200" cy="200" r="120" fill="#087CFF" opacity=".12"/>
+  <g transform="translate(-40 -10) scale(.9)">
+    <rect x="160" y="60" width="80" height="90" rx="18" fill="#080F20" opacity=".9"/>
+    <rect x="160" y="250" width="80" height="90" rx="18" fill="#080F20" opacity=".9"/>
+    <circle cx="200" cy="200" r="78" fill="#1b2440"/><circle cx="200" cy="200" r="64" fill="#080F20"/>
+         <circle cx="200" cy="200" r="52" fill="none" stroke="#087CFF" stroke-width="6" stroke-dasharray="230 400" stroke-linecap="round" transform="rotate(-90 200 200)"/>
+    <text x="200" y="208" font-family="Arial" font-weight="700" font-size="24" fill="#fff" text-anchor="middle">10:09</text>
+    <rect x="276" y="186" width="10" height="28" rx="4" fill="#087CFF"/></g>
+  <g transform="translate(150 160) scale(.55)">
+    <rect x="110" y="200" width="180" height="120" rx="56" fill="#fff" stroke="#d9e2f1" stroke-width="3"/>
+    <line x1="114" y1="244" x2="286" y2="244" stroke="#d9e2f1" stroke-width="3"/>
+    <circle cx="200" cy="290" r="5" fill="#087CFF"/>
+    <g transform="translate(140 90) rotate(-12)"><ellipse cx="0" cy="40" rx="30" ry="34" fill="#fff" stroke="#d9e2f1" stroke-width="3"/><rect x="-10" y="60" width="20" height="70" rx="10" fill="#fff" stroke="#d9e2f1" stroke-width="3"/><circle cx="0" cy="38" r="12" fill="#087CFF" opacity=".85"/></g>
+    <g transform="translate(262 90) rotate(12)"><ellipse cx="0" cy="40" rx="30" ry="34" fill="#fff" stroke="#d9e2f1" stroke-width="3"/><rect x="-10" y="60" width="20" height="70" rx="10" fill="#fff" stroke="#d9e2f1" stroke-width="3"/><circle cx="0" cy="38" r="12" fill="#087CFF" opacity=".85"/></g></g>
+</svg>
