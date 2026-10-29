@@ -99,6 +99,26 @@ Les illustrations SVG actuelles sont générées par `npm run images` (script `s
 
 En développement, chaque événement s'affiche dans la console du navigateur (`[Meta Pixel] …`). Pour vérifier en ligne : extension *Meta Pixel Helper* ou l'onglet *Tester les événements* du Gestionnaire d'événements.
 
+### Conversions API pour l'application mobile
+
+La route `POST /api/meta/events` reçoit les événements de l'app SABRI TECH et les transmet à la Conversions API de Meta (Graph API v26.0).
+
+- Elle n'accepte que `PageView`, `ViewContent`, `AddToCart`, `InitiateCheckout` et `Purchase`, au plus 10 par requête.
+- **Les montants sont recalculés côté serveur** à partir du catalogue et des quantités. Les prix envoyés par l'app sont ignorés et les produits inconnus sont retirés.
+- Elle ajoute l'IP et le navigateur du client, et un identifiant d'installation anonyme.
+
+Variables Vercel (*Settings → Environment Variables*, puis *Redeploy*) :
+
+| Variable | Rôle |
+|---|---|
+| `META_CAPI_ACCESS_TOKEN` | Jeton **secret** de la Conversions API. Jamais en `NEXT_PUBLIC_`. |
+| `NEXT_PUBLIC_META_PIXEL_ID` ou `META_DATASET_ID` | Dataset qui reçoit les événements. |
+| `META_TEST_EVENT_CODE` | Facultatif : affiche les événements dans *Tester les événements*. |
+| `META_CAPI_DRY_RUN=1` | Facultatif : renvoie le payload sans l'envoyer (tests). |
+
+Sans jeton, la route répond `204` et n'envoie rien. Les erreurs de Meta s'affichent dans les logs Vercel (`[Meta CAPI]`).
+⚠️ La route est publique : n'importe qui peut y envoyer des événements (les montants restent ceux du catalogue). Ajoutez une limite de requêtes si vous constatez des abus.
+
 ## Tableau de bord admin
 
 Page `/admin` : chiffre d'affaires, nombre de commandes, panier moyen, articles vendus, produits les plus commandés et dernières commandes. Elle indique aussi si le pixel est actif.
